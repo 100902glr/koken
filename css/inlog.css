@@ -78,3 +78,7 @@ nav ul li a:hover {
 .login a:hover{
   color: #808000;
 }
+
+form {
+  margin-top: 50%;
+}
