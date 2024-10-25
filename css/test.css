@@ -1,0 +1,21 @@
+.blue-block {
+  background-color: #297CA2; /* Adjust to match your blue block color */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.login-section {
+  background-color: #F0F0F0; /* A light background for contrast */
+  padding: 40px;
+  text-align: center;
+}
+
+.login-button {
+  display: inline-block;
+  background-color: #FF6A00; /* Example button color */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
