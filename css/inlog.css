@@ -1,0 +1,80 @@
+html,
+body {
+  height: 100%;
+  background-image: url("../media/inlogbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 125px;
+  background-color: #F6D1C3;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 23px;
+}
+
+
+
+nav ul li {
+  margin-right: 20px;
+}
+
+/* animatie (hover) */
+
+/* animatie end */
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  color: rgb(128, 128, 0);
+  
+
+}
+
+.login a {
+  text-decoration: none;
+  color: #333;
+  font-size: 23px;
+}
+.login a:hover{
+  color: #808000;
+}

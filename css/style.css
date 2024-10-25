@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  /*background slide show  */
+  body, html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    background-color: white;  /* wit scherm als de slides niet werken */
+    z-index: 0;
+  }
+  
+
+  
+  /* Optional: a semi-transparent overlay */
+  body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    background-color: rgba(0, 0, 0, 0.5); /* Darkens the background slightly */
+    z-index: -1;
+  }
+  /* background slide show end */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 125px;
+    background-color: #F6D1C3;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 23px;
+}
+
+
+
+nav ul li {
+    margin-right: 20px;
+}
+
+/* animatie (hover) */
+
+/* animatie end */
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: rgb(128, 128, 0);
+    
+
+}
+
+.login a {
+    text-decoration: none;
+    color: #333;
+    font-size: 23px;
+}
+.login a:hover{
+    color: #808000;
+}
+/* header end */
+
+/* hero section */
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 700px;
+    width: 100%;
+}
+
+
+
+.search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 32px;
+}
+
+.search-box h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.search-box form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input[type="text"] {
+    padding: 10px;
+    font-size: 26px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-box select {
+    padding: 10px;
+    font-size: 26px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    font-size: 26px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #e65a5a;
+}
+/* hero end */
+/* new */
+.new, .Populair{
+    background-color:  white;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.item {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.05) rotate(3deg);
+}
+
+.item .info {
+position: absolute;
+bottom: 0;
+background-color: rgba(0,0,0, 0.7);
+color: white;
+padding: 10px;
+border-radius: 5px;
+}
+
+.item .info h3 {
+    font-size: 1.5rem;
+  }
+  
+  .item .info p {
+    font-size: 0.9rem;
+  }
+
+/* new end */
+
+.voeg {
+    background-color: #F0F0F0; /* A light background for contrast */
+    padding: 40px;
+    text-align: center;
+}
+
+.login-button {
+    display: inline-block;
+    background-color: #FF6A00; /* Example button color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+
+
+/* populair start */
+.Populair {
+    background-color: white;
+}
+/* populair end */
+
+/* main start */
+
+.recipe-highlight {
+    background-color: rgb(255, 255, 255, 0.);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
+}
+
+
+/* NEW op food freaks scroll */
+
+.new, .Populair {
+    text-align: center; 
+    margin-bottom: 40px;
+    
+}
+
+
+/* Grid layout voor de items */
+.scroll-section {
+        width: 100%;
+        display: flex;
+        justify-content: space-around; 
+        flex-wrap: wrap;
+        gap: 40px;
+        padding:px;
+        background-color: rgb(48, 107, 131);
+    }
+
+/* Individuele items */
+
+
+
+/* Footer styles */
+footer {
+    background-color: #F6D1C3;
+    color: black;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: #808000;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #808000;
+}
+
+/* Social Icons */
+.social-icons a img {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #bbb;
+}
