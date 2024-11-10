@@ -16,3 +16,16 @@ function showSlides() {
 }
 
 showSlides(); // Start de slideshow
+
+document.addEventListener("DOMContentLoaded", function() {
+  const dishes = document.querySelectorAll(".freak");
+  dishes.forEach(item => {
+      item.addEventListener("click", function() {
+          const name = encodeURIComponent(this.getAttribute("data-name"));
+          const img = encodeURIComponent(this.getAttribute("data-img"));
+          const description = encodeURIComponent(this.getAttribute("data-description"));
+          // Redirect to details page with parameters
+          window.location.href = `html/details.html?name=${name}&img=${img}&description=${description}`;
+      });
+  });
+});
